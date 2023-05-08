@@ -1,4 +1,6 @@
 //
+//
+//
 //  ContentView.swift
 //  SwiftUiListExample
 //
@@ -15,8 +17,11 @@ struct ContentView: View {
     var body: some View {
         VStack{
             Button(action: {self.showFavs.toggle()}){
-                Text("Show Only Favourites")
-            }
+                if(showFavs){
+                    Text("Show All")
+                }else{
+                    Text("Show Only Favourites")
+                }
             
             if showFavs{
                 List(people) { person in  PersonRow(person: person)
