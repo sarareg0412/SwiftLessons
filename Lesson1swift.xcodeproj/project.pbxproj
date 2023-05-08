@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		F52C7F6A29FBFB7B00058151 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = F52C7F6929FBFB7B00058151 /* main.swift */; };
+		F52C7F7129FC146500058151 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = F52C7F7029FC146500058151 /* Person.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +26,14 @@
 /* Begin PBXFileReference section */
 		F52C7F6629FBFB7B00058151 /* Lesson1swift */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Lesson1swift; sourceTree = BUILT_PRODUCTS_DIR; };
 		F52C7F6929FBFB7B00058151 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		F52C7F7029FC146500058151 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		F5B5E1D32A09452900C7730F /* SwiftUiListExampleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUiListExampleApp.swift; sourceTree = "<group>"; };
+		F5B5E1D42A09452900C7730F /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		F5B5E1D52A09452900C7730F /* PersonRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonRow.swift; sourceTree = "<group>"; };
+		F5B5E1D62A09452900C7730F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F5B5E1D82A09452900C7730F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F5B5E1D92A09452900C7730F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		F5B5E1DA2A09452900C7730F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +50,7 @@
 		F52C7F5D29FBFB7B00058151 = {
 			isa = PBXGroup;
 			children = (
+				F5B5E1D22A09452900C7730F /* SwiftUiListExample */,
 				F52C7F6829FBFB7B00058151 /* Lesson1swift */,
 				F52C7F6729FBFB7B00058151 /* Products */,
 			);
@@ -58,8 +68,31 @@
 			isa = PBXGroup;
 			children = (
 				F52C7F6929FBFB7B00058151 /* main.swift */,
+				F52C7F7029FC146500058151 /* Person.swift */,
 			);
 			path = Lesson1swift;
+			sourceTree = "<group>";
+		};
+		F5B5E1D22A09452900C7730F /* SwiftUiListExample */ = {
+			isa = PBXGroup;
+			children = (
+				F5B5E1D32A09452900C7730F /* SwiftUiListExampleApp.swift */,
+				F5B5E1D42A09452900C7730F /* Model.swift */,
+				F5B5E1D52A09452900C7730F /* PersonRow.swift */,
+				F5B5E1D62A09452900C7730F /* Assets.xcassets */,
+				F5B5E1D72A09452900C7730F /* Preview Content */,
+				F5B5E1D92A09452900C7730F /* ContentView.swift */,
+				F5B5E1DA2A09452900C7730F /* Info.plist */,
+			);
+			path = SwiftUiListExample;
+			sourceTree = "<group>";
+		};
+		F5B5E1D72A09452900C7730F /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				F5B5E1D82A09452900C7730F /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -120,6 +153,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F52C7F7129FC146500058151 /* Person.swift in Sources */,
 				F52C7F6A29FBFB7B00058151 /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

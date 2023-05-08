@@ -90,3 +90,38 @@ print(countSimilar("aaa", ["aaa", "Aaa", "aaA"], similar2(_:_:)))
 print(countSimilar("aaa", ["aaa", "Aaa", "aaA"], {$0==$1}))
 print(countSimilar("aaa", ["aaa", "Aaa", "aaA"], {$0.lowercased()==$1.lowercased()}))
 print(countSimilar("aaa", ["aaa", "Aaa", "aaA"], {$0.prefix(2)==$1.prefix(2)}))
+
+
+var array = [Person(name: "Andrea", surname: "Andrei", age: 20, nickname: "Andre"),
+               Person(name: "Bruna", surname: "Bruni", age: 50, nickname: "Brubru"),
+               Person(name: "Carlo", surname: "Carli", age: 30),
+               Person(name: "Daniela", surname: "Danieli", age: 40, nickname: "Dan")
+]
+
+func printData(_ person: Person){
+    
+    if let nick = person.nickname{
+        print(person.name + " " + person.surname + " " + String(person.age) + " anni " + nick)
+    }else{
+        print(person.name + " " + person.surname + " " + String(person.age) + " anni")
+    }
+}
+
+func printAll (_ array : [Person]){
+    for p in array{
+        printData(p)
+    }
+}
+
+func function( _ array : [Person]) -> [Person]{
+    var copy : [Person] = []
+    for p in array{
+        if p.age <= 30{
+            copy.append(p)
+        }
+    }
+    return copy
+}
+
+printAll(array)
+printAll(function(array))
